@@ -1,7 +1,7 @@
 {
   "name": "dashboard-early-warning-system",
   "version": "1.0.0",
-  "description": "Dibuat untuk memenuhi tugas capstone Studi Independen Bersertifikat Kampus Merdeka Dicoding (Pengembang Front-End Web dan Back-End",
+  "description": "Dibuat untuk memenuhi tugas capstone Studi Independen Bersertifikat Kampus Merdeka Dicoding (Pengembang Front-End Web dan Back-End)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/juanpradana/Dashboard-Early-Warning-System.git"
   },
-  "author": "Muhammad Juan Pradana - Aulia Rahman",
+  "author": "Aulia Rahman - Muhammad Juan Pradana",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/juanpradana/Dashboard-Early-Warning-System/issues"
