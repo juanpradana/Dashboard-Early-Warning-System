@@ -50,6 +50,10 @@ body {
   cursor: pointer;
 }
 
+span.fas {
+  color:#fff;
+}
+
 .app-bar .app-bar__navMenu {
   position: static;
   background-color: #266079;
