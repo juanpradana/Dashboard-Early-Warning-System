@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+/* AppBar */
+.head-bar {
+  position: sticky;
+  background-color: #266079;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-bar {
+  grid-template-columns: 1fr auto;
+  padding: 8px 32px;
+  max-width: 1140px;
+  min-height: 76px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #266079;
+  display: grid;
+  gap: 10px;
+  top: 0;
+  z-index: 99;
+}
+
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.app-bar .app-bar__navMenu {
+  position: static;
+  background-color: #266079;
+  width: 100%;
+  top: 76px;
+  left: 0;
+}
+
+.app-bar .app-bar__navMenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.app-bar .app-bar__navMenu ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.app-bar .app-bar__navMenu ul li a {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.app-bar .app-bar__navMenu ul li a:hover {
+  transition: all 1s;
+  background: black;
+  opacity: 100%;
+}
+
+.app-bar .app-bar__location {
+  position: absolute;
+  top: 76px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  top: 76px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-bar .app-bar__location.open {
+  left: 0;
+}
+
+.app-bar .app-bar__location h1 {
+  text-align: center;
+}
+
+.app-bar .app-bar__location ul {
+  margin: 0;
+  padding: 0;
+}
+
+.app-bar .app-bar__location ul li {
+  list-style: none;
+}
+
+.app-bar .app-bar__location ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 16px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.app-bar .app-bar__location ul li a:hover {
+  transition: all 1s;
+  background: #B8E4F0;
+  opacity: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #3d3d3d;
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}

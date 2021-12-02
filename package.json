@@ -4,7 +4,9 @@
   "description": "Dibuat untuk memenuhi tugas capstone Studi Independen Bersertifikat Kampus Merdeka Dicoding (Pengembang Front-End Web dan Back-End)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ./src",
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,25 @@
   "bugs": {
     "url": "https://github.com/juanpradana/Dashboard-Early-Warning-System/issues"
   },
-  "homepage": "https://github.com/juanpradana/Dashboard-Early-Warning-System#readme"
+  "homepage": "https://github.com/juanpradana/Dashboard-Early-Warning-System#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^3.6.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.0.9",
+    "webpack-pwa-manifest": "^4.3.0",
+    "whatwg-fetch": "^3.2.0"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.5",
+    "serviceworker-webpack-plugin": "^1.0.1"
+  }
 }

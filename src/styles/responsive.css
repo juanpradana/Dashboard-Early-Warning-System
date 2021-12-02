@@ -1,0 +1,5 @@
+@media screen and (max-width: 364px) {
+  .app-bar .app-bar__location {
+    top: 118.4px;
+  }
+}

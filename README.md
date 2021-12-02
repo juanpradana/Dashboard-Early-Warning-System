@@ -4,3 +4,6 @@
 ## Originally developed by:
 - Aulia Rahman
 - Muhammad Juan Pradana
+
+### Design UI
+https://www.figma.com/file/uCnWWNVui0RXLdFWv1z0xd/dashboard-capstone?node-id=0%3A1
