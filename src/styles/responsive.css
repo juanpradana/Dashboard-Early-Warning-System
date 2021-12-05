@@ -3,3 +3,17 @@
     top: 118.4px;
   }
 }
+@media screen and (min-width: 800px) {
+  .content_grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+ .content_grid{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+}
