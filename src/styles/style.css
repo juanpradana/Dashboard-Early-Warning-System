@@ -149,6 +149,36 @@ span.fas {
   border-radius: 7px;
   
 }
+/* table */
+
+.table_title{
+  padding-top: 20px;
+  margin: 0px 0px 20px 20px;
+  position: static;
+  
+}
+.table {
+width: 100%;
+}
+table {
+font-family: sans-serif;
+color: #232323;
+border-collapse: collapse;
+width: 100%;
+}
+table, th {
+border-top: solid 1px rgb(87, 83, 83);
+padding: 8px 20px;
+height: 40px;
+
+}
+table, td{
+text-align: center;
+padding: 8px 20px;
+height: 40px;
+}
+
+
 /* Footer */
 footer {
   background-color: #3d3d3d;
