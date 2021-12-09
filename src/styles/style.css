@@ -133,10 +133,13 @@ span.fas {
   background: #B8E4F0;
   opacity: 100%;
 }
+
+/* maincontent */
 #maincontent{
   width: 100%;
   padding: 20px;
 }
+
 .posts{
   margin: 10px;
   width: 100%;
@@ -144,42 +147,69 @@ span.fas {
   border-radius: 5px;
   margin-left: 5px;
 }
+
+.cardTest {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 7px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 .card {
+  border: 1px solid rgba(0, 0, 0, .125);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 7px;
-  
 }
+
+/* Location */
+#location h1 {
+  padding-left: 10px;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 /* table */
 #water_level{
   overflow: scroll;
 }
+
 .table_title{
-  padding-top: 20px;
+  padding-top: 5px 10px;
   margin: 0px 0px 20px 20px;
   position: static;
-  
 }
+
+.table_title h2 {
+  font-size: 16px;
+}
+
 .table {
-width: 100%;
+  width: 100%;
 }
+
 table {
-font-family: sans-serif;
-color: #232323;
-border-collapse: collapse;
-width: 100%;
-}
-table, th {
-border-top: solid 1px rgb(87, 83, 83);
-padding: 8px 20px;
-height: 40px;
-
-}
-table, td{
-text-align: center;
-padding: 8px 20px;
-height: 40px;
+  font-family: sans-serif;
+  color: #232323;
+  border-collapse: collapse;
+  width: 100%;
 }
 
+.table_tab table th {
+  border-bottom: solid 1px rgb(87, 83, 83);
+  padding: 8px 20px;
+  height: 40px;
+}
+
+table td{
+  text-align: center;
+  padding: 8px 20px;
+  height: 40px;
+}
 
 /* Footer */
 footer {
