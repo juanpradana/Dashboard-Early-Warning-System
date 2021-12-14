@@ -27,6 +27,12 @@ class navigasiBar extends HTMLElement {
           </div>
         </div>
       </div>
+      <div class="hero">
+        <div class="hero-text">
+            <h2>Perangkat Ukur Murah Muka Air Laut</h2>
+            <h3>Tsunami Early Warning System</h3>
+        </div>
+    </div>
   `;
   }
 }
