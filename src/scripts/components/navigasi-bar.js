@@ -15,14 +15,14 @@ class navigasiBar extends HTMLElement {
           <div class="app-bar__navMenu">
             <ul>
               <li><a href="#/home">Home</a></li>
-              <li><a href="#/">About Us</a></li>
+              <li><a href="#/about">About Us</a></li>
             </ul>
           </div>
           <div id="navigationDrawer" class="app-bar__location">
             <h1>Pilih Lokasi</h1>
             <ul>
-              <li><a href="#/lampung01">Lampung01</a></li>
-              <li><a href="#/lampung02">Lampung02</a></li>
+              <li><a href="#/dashboard/lampung01">Lampung01</a></li>
+              <li><a href="#/dashboard/lampung02">Lampung02</a></li>
             </ul>
           </div>
         </div>
