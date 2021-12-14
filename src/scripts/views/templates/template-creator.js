@@ -76,7 +76,8 @@ const createDashboardContentTemplate = () => {
   `;
 };
 
-const createDashboardTemplate = (codeUnit, data) => {
+// eslint-disable-next-line no-unused-vars
+const createDashboardTemplate = (_codeUnit, _data) => {
   const dashboardContainer = document.querySelector('.dashboard');
   dashboardContainer.innerHTML = `
     <div id="picture" class="posts card">
@@ -91,4 +92,5 @@ const createDashboardTemplate = (codeUnit, data) => {
   surfaceMeasureGraph();
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export { createDashboardTemplate };

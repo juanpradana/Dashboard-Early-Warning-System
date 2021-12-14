@@ -1,4 +1,6 @@
-/* eslint-disable no-undef */
+// eslint-disable-next-line import/extensions
+import Plotly from 'plotly.js/dist/plotly.min.js';
+
 const temperatureGraph = () => {
   try {
     // eslint-disable-next-line no-inner-declarations
@@ -21,24 +23,27 @@ const temperatureGraph = () => {
     const config = { responsive: true };
     Plotly.newPlot('temperature-graph', data, layout, config);
     setInterval(() => {
-      const timee = new Date();
-      const update = {
-        x: [[timee]],
-        y: [[rand()]],
-      };
-      const olderTime = timee.setMinutes(timee.getMinutes() - 1);
-      const futureTime = timee.setMinutes(timee.getMinutes() + 1);
-      const minuteView = {
-        xaxis: {
-          type: 'date',
-          range: [olderTime, futureTime],
-        },
-        yaxis: {
-          range: [0, 500],
-        },
-      };
-      Plotly.relayout('temperature-graph', minuteView);
-      Plotly.extendTraces('temperature-graph', update, [0]);
+      try {
+        const timee = new Date();
+        const update = {
+          x: [[timee]],
+          y: [[rand()]],
+        };
+        const olderTime = timee.setMinutes(timee.getMinutes() - 1);
+        const futureTime = timee.setMinutes(timee.getMinutes() + 1);
+        const minuteView = {
+          xaxis: {
+            type: 'date',
+            range: [olderTime, futureTime],
+          },
+          yaxis: {
+            range: [0, 500],
+          },
+        };
+        Plotly.relayout('temperature-graph', minuteView);
+        Plotly.extendTraces('temperature-graph', update, [0]);
+      // eslint-disable-next-line no-empty
+      } catch (error) {}
     }, 1000);
   } catch (err) {
     console.log(err);
