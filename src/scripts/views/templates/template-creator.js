@@ -1,5 +1,5 @@
 import temperatureGraph from '../../components/temperatureGraph';
-import surfaceMeasureGraph from '../../components/surfaceMeasureGraph';
+import SurfaceMeasure from '../../components/surfaceMeasureGraph';
 
 const createDashboardContentTemplate = () => {
   const contentContainer = document.querySelector('.content_grid');
@@ -77,7 +77,7 @@ const createDashboardContentTemplate = () => {
 };
 
 // eslint-disable-next-line no-unused-vars
-const createDashboardTemplate = (_codeUnit, _data) => {
+const createDashboardTemplate = (_codeUnit) => {
   const dashboardContainer = document.querySelector('.dashboard');
   dashboardContainer.innerHTML = `
     <div id="picture" class="picture ">
@@ -89,7 +89,7 @@ const createDashboardTemplate = (_codeUnit, _data) => {
   `;
   createDashboardContentTemplate();
   temperatureGraph();
-  surfaceMeasureGraph();
+  SurfaceMeasure.surfaceMeasureGraph(_codeUnit);
 };
 const createHomepageTemplate = () => {
   const homePageContainer = document.querySelector('.dashboard');

@@ -12,7 +12,7 @@ const AboutPage = {
         <h1> Test About </h1>
       `;
     } catch (err) {
-      const postsContainer = document.querySelector('.homeContent');
+      const postsContainer = document.querySelector('.aboutContent');
       postsContainer.innerHTML = `${err}, swipe up to refresh!</h3></div>`;
       console.log(err);
     }
