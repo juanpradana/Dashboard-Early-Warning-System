@@ -1,3 +1,5 @@
+import { createHomepageTemplate } from '../templates/template-creator';
+
 const HomePage = {
   async render() {
     return `
@@ -7,10 +9,7 @@ const HomePage = {
 
   async afterRender() {
     try {
-      const postsContainer = document.querySelector('.homeContent');
-      postsContainer.innerHTML = `
-        <h1> Test Home </h1>
-      `;
+      createHomepageTemplate();
     } catch (err) {
       const postsContainer = document.querySelector('.homeContent');
       postsContainer.innerHTML = `${err}, swipe up to refresh!</h3></div>`;

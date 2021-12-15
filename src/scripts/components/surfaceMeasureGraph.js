@@ -24,28 +24,30 @@ const SurfaceMeasure = {
       };
       const config = { responsive: true };
       Plotly.newPlot('surfaceMeasure-graph', data, layout, config);
+      let tempTime;
       setInterval(async () => {
         try {
           const datass = await DataSource.dataCenter(codeUnit);
-          const timee = new Date();
           const waktuu = new Date();
           waktuu.setHours(datass[0].TS.split(':')[0]);
           waktuu.setMinutes(datass[0].TS.split(':')[1]);
           waktuu.setSeconds(datass[0].TS.split(':')[2]);
-          const update = {
-            x: [[waktuu]],
-            y: [[datass[0].tinggi]],
-          };
-          const olderTime = timee.setMinutes(timee.getMinutes() - 1);
-          const futureTime = timee.setMinutes(timee.getMinutes() + 1);
-          const minuteView = {
-            xaxis: {
-              type: 'date',
-              range: [olderTime, futureTime],
-            },
-          };
-          Plotly.relayout('surfaceMeasure-graph', minuteView);
-          Plotly.extendTraces('surfaceMeasure-graph', update, [0]);
+          if (tempTime === undefined || tempTime < waktuu) {
+            const update = {
+              x: [[waktuu]],
+              y: [[datass[0].tinggi]],
+            };
+            const olderTime = waktuu.setMinutes(waktuu.getMinutes() - 1);
+            const futureTime = waktuu.setMinutes(waktuu.getMinutes() + 1);
+            const minuteView = {
+              xaxis: {
+                type: 'date',
+                range: [olderTime, futureTime],
+              },
+            };
+            Plotly.relayout('surfaceMeasure-graph', minuteView);
+            Plotly.extendTraces('surfaceMeasure-graph', update, [0]);
+          }
         // eslint-disable-next-line no-empty
         } catch (error) {}
       }, 1000);
