@@ -1,4 +1,4 @@
-import temperatureGraph from '../../components/temperatureGraph';
+import Temperature from '../../components/temperatureGraph';
 import SurfaceMeasure from '../../components/surfaceMeasureGraph';
 
 const createDashboardContentTemplate = () => {
@@ -88,11 +88,11 @@ const createDashboardTemplate = (_codeUnit) => {
     <div class="content_grid"></div>
   `;
   createDashboardContentTemplate();
-  temperatureGraph();
+  Temperature.temperatureGraph(_codeUnit);
   SurfaceMeasure.surfaceMeasureGraph(_codeUnit);
 };
 const createHomepageTemplate = () => {
-  const homePageContainer = document.querySelector('.dashboard');
+  const homePageContainer = document.querySelector('.homeContent');
   homePageContainer.innerHTML = `
   <main>
   <div class="Device-list"><h2>Device List</h2></div> 
@@ -140,5 +140,5 @@ const createHomepageTemplate = () => {
    </div>
 </div>`;
 };
-// eslint-disable-next-line import/prefer-default-export
+
 export { createDashboardTemplate, createHomepageTemplate };

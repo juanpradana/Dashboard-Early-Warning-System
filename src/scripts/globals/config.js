@@ -1,5 +1,5 @@
 const CONFIG = {
-  BASE_URL: 'https://pumma-beta.herokuapp.com/datas?codeUnit=',
+  BASE_URL: 'http://54.169.206.1:8000/datas?codeUnit=',
   CACHE_NAME: 'Dashboard_PUMMA-v1.0',
 };
 
