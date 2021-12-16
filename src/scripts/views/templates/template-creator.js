@@ -1,7 +1,8 @@
 import Temperature from '../../components/temperatureGraph';
 import SurfaceMeasure from '../../components/surfaceMeasureGraph';
+import CONFIG from '../../globals/config';
 
-const createDashboardContentTemplate = () => {
+const createDashboardContentTemplate = (_codeUnit) => {
   const contentContainer = document.querySelector('.content_grid');
   contentContainer.innerHTML = `
     <div id="temperature-graph" class="grafik card"></div>
@@ -71,7 +72,7 @@ const createDashboardContentTemplate = () => {
     </div>
     <div id="location" class="grafik card">
       <h1>Lokasi PUMMA</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.712237637262!2d105.1701593147662!3d-5.609450995933398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zNcKwMzYnMzQuMCJTIDEwNcKwMTAnMjAuNSJF!5e0!3m2!1sen!2sid!4v1639065434949!5m2!1sen!2sid" width="100%" height="85%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="${CONFIG.LOCATION[_codeUnit]}" loading="lazy"></iframe>
     </div>
   `;
 };
@@ -81,13 +82,13 @@ const createDashboardTemplate = (_codeUnit) => {
   const dashboardContainer = document.querySelector('.dashboard');
   dashboardContainer.innerHTML = `
     <div id="picture" class="picture ">
-      <a href="https://www.dropbox.com/s/iv9xlzkdfqx2zj5/camerapumma.jpg?raw=1" target="_blank"> 
-        <img src="https://www.dropbox.com/s/iv9xlzkdfqx2zj5/camerapumma.jpg?raw=1" alt="pumma lampung 001" width="100%" height="100%"> 
+      <a href="${CONFIG.UNIT_CODE[_codeUnit]}" target="_blank"> 
+        <img src="${CONFIG.UNIT_CODE[_codeUnit]}" alt="pumma lampung 001" width="100%" height="100%"> 
       </a>
     </div>
     <div class="content_grid"></div>
   `;
-  createDashboardContentTemplate();
+  createDashboardContentTemplate(_codeUnit);
   Temperature.temperatureGraph(_codeUnit);
   SurfaceMeasure.surfaceMeasureGraph(_codeUnit);
 };

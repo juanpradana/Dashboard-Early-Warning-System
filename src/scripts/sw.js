@@ -12,5 +12,7 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  event.respondWith(CacheHelper.revalidateCache(event.request));
+  if (event.request.url.split('.').includes('css') || event.request.url.split('.').includes('js')) {
+    event.respondWith(CacheHelper.revalidateCache(event.request));
+  }
 });

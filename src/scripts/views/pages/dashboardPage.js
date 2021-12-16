@@ -14,7 +14,6 @@ const DashboardPage = {
     try {
       createDashboardTemplate(codeUnit);
     } catch (err) {
-      console.log(err);
       // const dashboardContainer = document.querySelector('.dashboard');
       // dashboardContainer.innerHTML = `<h3>Error: ${err}, swipe up to refresh!</h3>`;
     }
