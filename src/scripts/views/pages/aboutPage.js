@@ -1,3 +1,5 @@
+import { createAboutUsTemplate } from '../templates/template-creator';
+
 const AboutPage = {
   async render() {
     return `
@@ -7,10 +9,7 @@ const AboutPage = {
 
   async afterRender() {
     try {
-      const postsContainer = document.querySelector('.aboutContent');
-      postsContainer.innerHTML = `
-        <h1> Test About </h1>
-      `;
+      createAboutUsTemplate();
     } catch (err) {
       const postsContainer = document.querySelector('.aboutContent');
       postsContainer.innerHTML = `${err}, swipe up to refresh!</h3></div>`;

@@ -26,13 +26,27 @@
     height: 450px;
   }
   .hero .hero-text h2 {
-    color: white;
     font-size: 40px;
   }
   .hero .hero-text h3 {
     color: #FFCC1D;
     font-size: 25px;
-  }  
+  } 
+  main .Device-grid-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Device-grid-fitur{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+  .about-picture{
+    margin: 10px 55px 40px ;
+  }
+  .about-description {
+    padding: 10px;
+  } 
 }
 @media screen and (max-width: 550px) {
   .picture{
@@ -40,12 +54,36 @@
     height: 250px;
   }
   .hero .hero-text h2 {
-    color: white;
     font-size: 30px;
   }
   .hero .hero-text h3 {
     color: #FFCC1D;
     font-size: 20px;
   }
+  main .Device-grid-name{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+  .Device-grid-fitur{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 40px;
+  }
   
+}
+@media screen and (min-width: 900px){
+  main .Device-grid-name{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  .Device-grid-fitur{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 40px;
+  }
+  .about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+}
 }

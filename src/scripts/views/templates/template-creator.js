@@ -109,37 +109,60 @@ const createHomepageTemplate = () => {
        <div class="Device-name">Lampung 01</div>
    </div>
 </main>
-<div class="Fitur-brand-text">
-   <h1>Selalu Cek Informasi Tentang</h1>
-   <h1>Permukaan Air Laur</h1>
-</div>
-<div class="Device-grid-fitur">
-   <div class="Device-fitur-1">
-       <div class="container-icon-1">
-           <img src="../global/img/icon project capstone.png" alt=""> 
-       </div>
-       <p>Grafik Suhu Radar</p>
-   </div>
-   <div class="Device-fitur-2">
-       <div class="container-icon-2">
-           <img src="../global/img/icon project capstone.png" alt="">
-       </div>
-       <p>Grafik Ketinggian air laut</p>
-   </div>
-   <div class="Device-fitur-1">
-       <div class="container-icon-1">
-           <img src="../global/img/icon project capstone1.png" alt="">
-       </div>
-       <p>Tabel Suhu radar dan</p>
-       <p> ketinggian air</p>
-   </div>
-   <div class="Device-fitur-2">
-       <div class="container-icon-2">
-           <img src="../global/img/icon project capstone2.png" alt="">
-       </div>
-       <p>Foto Sekitar Radar</p>
-   </div>
-</div>`;
+`;
+};
+const createAboutUsTemplate = () => {
+  const aboutUsContainer = document.querySelector('.aboutContent');
+  aboutUsContainer.innerHTML = `
+  <main class="mainAbout-us">
+  <h1>About us</h1>
+  <div class="about-grid">
+      <div class="about-description">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea id, quod sit, est vel, nobis atque ducimus dolore reprehenderit temporibus enim. Et, harum obcaecati nobis consequatur culpa suscipit ducimus blanditiis?
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe maxime nulla facere explicabo obcaecati, asperiores quas blanditiis ipsum non accusantium, dolorem magnam vitae. Impedit, esse! Ut neque iusto distinctio.</p>
+      </div>
+      <div class="about-picture-container">
+          <img class="about-picture"  src="../public/img/icon project capstone1.png" alt="">
+      </div> 
+  </div>
+  
+  </main>
+  <div class="Fitur-brand-text">
+  <h1>Selalu Cek Informasi Tentang</h1>
+  <h1>Permukaan Air Laur</h1>
+  </div>
+  <div class="Device-grid-fitur">
+  <div class="Device-fitur">
+      <div class="container-icon">
+          <img src="/src/public/img/icon project capstone.png" alt=""> 
+      </div>
+      <h1>Grafik Suhu Radar</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
+      
+  </div>
+  <div class="Device-fitur">
+      <div class="container-icon">
+          <img src="/src/public/img/icon project capstone.png" alt="">
+      </div>
+      <h1>Grafik Ketinggian air laut</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
+  </div>
+  <div class="Device-fitur">
+      <div class="container-icon">
+          <img src="/src/public/img/icon project capstone1.png" alt="">
+      </div>
+      <h1>Tabel Suhu radar dan ketinggian air</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
+
+  </div>
+  <div class="Device-fitur">
+      <div class="container-icon">
+          <img src="/src/public/img/icon project capstone2.png" alt="">
+      </div>
+      <h1>Foto Sekitar Radar</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
+  </div>
+  </div>`;
 };
 
-export { createDashboardTemplate, createHomepageTemplate };
+export { createDashboardTemplate, createHomepageTemplate, createAboutUsTemplate };
