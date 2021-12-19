@@ -15,12 +15,13 @@ const SurfaceMeasure = {
         y: [datas.tinggi],
         mode: 'lines',
         line: { color: '#80CAF6' },
-        yaxis: {
-          range: [0, 600],
-        },
       }];
       const layout = {
         title: '<b>Ketinggian Air Laut</b>',
+        yaxis: {
+          title: 'Ketinggian (Cm)',
+          range: [0, 600],
+        },
       };
       const config = { responsive: true };
       Plotly.newPlot('surfaceMeasure-graph', data, layout, config);

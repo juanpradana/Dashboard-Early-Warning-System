@@ -15,12 +15,13 @@ const Temperature = {
         y: [datas.suhu],
         mode: 'lines',
         line: { color: '#80CAF6' },
-        yaxis: {
-          range: [0, 600],
-        },
       }];
       const layout = {
         title: '<b>Suhu Perangkat</b>',
+        yaxis: {
+          title: 'Suhu (°C)',
+          range: [0, 80],
+        },
       };
       const config = { responsive: true };
       Plotly.newPlot('temperature-graph', data, layout, config);

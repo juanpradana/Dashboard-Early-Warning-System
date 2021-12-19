@@ -1,5 +1,6 @@
 import Temperature from '../../components/temperatureGraph';
 import SurfaceMeasure from '../../components/surfaceMeasureGraph';
+// import dataTableDrawer from '../../components/dataTable';
 import CONFIG from '../../globals/config';
 
 const createDashboardContentTemplate = (_codeUnit) => {
@@ -7,68 +8,21 @@ const createDashboardContentTemplate = (_codeUnit) => {
   contentContainer.innerHTML = `
     <div id="temperature-graph" class="grafik card"></div>
     <div id="surfaceMeasure-graph" class="grafik card"></div>
-    <div id="water_level" class="grafik card">
-      <div class="table_tab">
-        <div class="table_title">
-          <h2>Ketinggian Air dan Suhu Perangkat</h2>
-        </div>
-        <table>
+    <div class="grafik card">
+      <table id="xTable" class="display" style="width:100%">
+        <thead>
           <tr>
-            <th>timestamp</th>
-            <th>ketinggian (Cm)</th>
-            <th>suhu (Celcius)</th>
+            <th>Timestamp</th>
+            <th>Ketinggian Air</th>
+            <th>Suhu</th>
           </tr>
-        </table>
-      </div>
-      <div class="table">
-        <table>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>3</td>
-            <td>3</td>  
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>3</td>
-            <td>3</td> 
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>3</td>
-            <td>3</td>  
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>3</td>
-            <td>3</td>  
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>3</td>
-            <td>3</td>  
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>3</td>
-            <td>3</td>  
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>3</td>
-            <td>3</td>  
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>3</td>
-            <td>3</td>  
-          </tr>               
-        </table>
-      </div>
+        </thead>
+        <tfoot>
+          <th>Timestamp</th>
+          <th>Ketinggian Air</th>
+          <th>Suhu</th>
+        </tfoot>
+      </table>
     </div>
     <div id="location" class="grafik card">
       <h1>Lokasi PUMMA</h1>
@@ -91,6 +45,7 @@ const createDashboardTemplate = (_codeUnit) => {
   createDashboardContentTemplate(_codeUnit);
   Temperature.temperatureGraph(_codeUnit);
   SurfaceMeasure.surfaceMeasureGraph(_codeUnit);
+  // dataTableDrawer.dataTableMaker(_codeUnit);
 };
 const createHomepageTemplate = () => {
   const homePageContainer = document.querySelector('.homeContent');
