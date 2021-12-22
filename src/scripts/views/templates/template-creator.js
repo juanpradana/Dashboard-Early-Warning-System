@@ -8,7 +8,7 @@ const createDashboardContentTemplate = (_codeUnit) => {
   contentContainer.innerHTML = `
     <div id="temperature-graph" class="grafik card"></div>
     <div id="surfaceMeasure-graph" class="grafik card"></div>
-    <div class="cardTest">
+    <div class="Table card">
       <table id="xTable" class="display" style="width:100%">
         <thead>
           <tr>

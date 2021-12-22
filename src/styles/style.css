@@ -216,13 +216,22 @@ main .Device-name{
 }
 
 .grafik{
-  margin: 10px;
+  margin-top: 10px;
   width: 100%;
   height:300px;
   border-radius: 5px;
-  margin-left: 5px;
   background-color: white;
   box-sizing: border-box;
+  overflow: hidden;
+}
+.Table{
+  margin-top: 10px;
+  width: 100%;
+  height:300px;
+  border-radius: 5px;
+  background-color: white;
+  box-sizing: border-box;
+  overflow: scroll;
 }
 
 .cardTest {
@@ -241,6 +250,11 @@ main .Device-name{
   border: 1px solid rgba(0, 0, 0, .125);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 7px;
+}
+.content_grid{
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0px auto;
 }
 
 /* Location */
