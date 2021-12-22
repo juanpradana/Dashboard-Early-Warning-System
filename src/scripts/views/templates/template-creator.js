@@ -1,6 +1,6 @@
 import Temperature from '../../components/temperatureGraph';
 import SurfaceMeasure from '../../components/surfaceMeasureGraph';
-// import dataTableDrawer from '../../components/dataTable';
+import dataTableDrawer from '../../components/dataTable';
 import CONFIG from '../../globals/config';
 
 const createDashboardContentTemplate = (_codeUnit) => {
@@ -8,19 +8,19 @@ const createDashboardContentTemplate = (_codeUnit) => {
   contentContainer.innerHTML = `
     <div id="temperature-graph" class="grafik card"></div>
     <div id="surfaceMeasure-graph" class="grafik card"></div>
-    <div class="grafik card">
+    <div class="cardTest">
       <table id="xTable" class="display" style="width:100%">
         <thead>
           <tr>
             <th>Timestamp</th>
-            <th>Ketinggian Air</th>
-            <th>Suhu</th>
+            <th>Ketinggian Air (Cm)</th>
+            <th>Suhu Perangkat (°C)</th>
           </tr>
         </thead>
         <tfoot>
           <th>Timestamp</th>
-          <th>Ketinggian Air</th>
-          <th>Suhu</th>
+          <th>Ketinggian Air (Cm)</th>
+          <th>Suhu Perangkat (°C)</th>
         </tfoot>
       </table>
     </div>
@@ -45,7 +45,7 @@ const createDashboardTemplate = (_codeUnit) => {
   createDashboardContentTemplate(_codeUnit);
   Temperature.temperatureGraph(_codeUnit);
   SurfaceMeasure.surfaceMeasureGraph(_codeUnit);
-  // dataTableDrawer.dataTableMaker(_codeUnit);
+  dataTableDrawer.dataTableMaker(_codeUnit);
 };
 const createHomepageTemplate = () => {
   const homePageContainer = document.querySelector('.homeContent');

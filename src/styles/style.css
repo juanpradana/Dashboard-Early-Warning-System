@@ -132,6 +132,7 @@ span.fas {
   background: #B8E4F0;
   opacity: 100%;
 }
+
 /* hero */
 .hero{
   width: 100%;
@@ -141,20 +142,23 @@ span.fas {
   z-index: -99;
 
 }
+
 .hero .hero-text{
   text-align: center;
   margin-top: 120px;
 }
+
 .hero .hero-text h2 {
   color: #266079;
   font-size: 50px;
 }
+
 .hero .hero-text h3 {
   color: #FFCC1D;
   font-size: 40px;
 }
-/* homepage */
 
+/* homepage */
 main{
   width: 70%;
   margin: 0 auto;
@@ -165,6 +169,7 @@ main{
   margin-top: 300px;
  
 }
+
 main .Device-list{
   text-align: center;
   background-color: #04293A;
@@ -174,10 +179,12 @@ main .Device-list{
   z-index: 130;
  
 }
+
 main .Device-list h2{
   color: white;
   padding-top: 10px;
 }
+
 main .Device-name{
   width: 95%;
   height: 200px;
@@ -185,12 +192,14 @@ main .Device-name{
   margin: 10px auto;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
+
 /* dashboard */
 /* maincontent */
 #maincontent{
   width: 100%;
   padding: 20px;
 }
+
 .picture{
   margin: 10px;
   width: 60%;
@@ -201,9 +210,11 @@ main .Device-name{
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
 }
+
 .picture img{
   border-radius: 30px;
 }
+
 .grafik{
   margin: 10px;
   width: 100%;
@@ -223,6 +234,7 @@ main .Device-name{
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: 7px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 .card {
@@ -239,45 +251,7 @@ main .Device-name{
   font-weight: 400;
 }
 
-/* table */
-#water_level{
-  overflow: scroll;
-}
-
-.table_title{
-  padding-top: 5px 10px;
-  margin: 0px 0px 20px 20px;
-  position: static;
-}
-
-.table_title h2 {
-  font-size: 16px;
-}
-
-.table {
-  width: 100%;
-}
-
-table {
-  font-family: sans-serif;
-  color: #232323;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.table_tab table th {
-  border-bottom: solid 1px rgb(87, 83, 83);
-  padding: 8px 20px;
-  height: 40px;
-}
-
-table td{
-  text-align: center;
-  padding: 8px 20px;
-  height: 40px;
-}
 /* about us */
-
 .mainAbout-us{
   width: 70%;
   margin: 0 auto;
@@ -286,23 +260,26 @@ table td{
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   margin-top: 300px;
- 
 }
+
 .mainAbout-us h1 {
   text-align: center;
   margin: 20px 0px 40px;
   font-size: 40px;
 }
+
 .about-picture-container{
   width: 80%;
   height: 400px;
   background-color: #266079;
 }
+
 .about-picture {
   width: 80%;
   margin-bottom: 40px;
  
 }
+
 .about-description{
   padding: 50px 0px 0px 40px;
 }
@@ -313,6 +290,7 @@ table td{
   color: white;
 
 }
+
 .Device-fitur{
   width: 95%;
   height: 400px;
@@ -321,6 +299,7 @@ table td{
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
 }
+
 .container-icon{
   width: 120px;
   height: 120px;
@@ -328,6 +307,7 @@ table td{
   margin: 20px auto;
   border-radius: 100%;
 }
+
 .container-icon img{
   width: 60%;
   max-height: 140px;
@@ -335,17 +315,18 @@ table td{
   object-position: center;
   margin: 20px 20px;
 }
+
 .Device-fitur h1{
   text-align: center;
   color: black;
   font-weight: bold;
   font-size: 20px;
 }
+
 .Device-fitur p {
   text-align: center;
   margin: 10px 20px 0px 20px;
 }
-
 
 /* Footer */
 footer .footer-primary{
@@ -354,12 +335,14 @@ footer .footer-primary{
   background-color: #04293A;
   margin-top: 40px;
 }
+
 footer .footer-secondary{
   width: 100%;
   height: 50px;
   background-color: #266079;
   border-top: 2px solid #266079;
 }
+
 footer .footer-secondary p{
   color: white;
   text-align: center;

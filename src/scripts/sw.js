@@ -11,8 +11,8 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(CacheHelper.deleteOldCache());
 });
 
-self.addEventListener('fetch', (event) => {
-  if (event.request.url.split('.').includes('css') || event.request.url.split('.').includes('js')) {
-    event.respondWith(CacheHelper.revalidateCache(event.request));
-  }
-});
+// self.addEventListener('fetch', (event) => {
+//   if (event.request.url.split('.').includes('css') || event.request.url.split('.').includes('js')) {
+//     event.respondWith(CacheHelper.revalidateCache(event.request));
+//   }
+// });

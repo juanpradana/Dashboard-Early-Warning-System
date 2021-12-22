@@ -39,7 +39,6 @@ const SurfaceMeasure = {
               x: [[waktuu]],
               y: [[datass.tinggi]],
             };
-            console.log(datass);
             const olderTime = timeUpdate.setMinutes(timeUpdate.getMinutes() - 1);
             const futureTime = timeUpdate.setMinutes(timeUpdate.getMinutes() + 1);
             const minuteView = {

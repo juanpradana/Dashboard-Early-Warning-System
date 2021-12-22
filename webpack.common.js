@@ -53,10 +53,6 @@ module.exports = {
         test: /\.js$/,
         loader: 'ify-loader',
       },
-      // {
-      //   test: /datatables\.net.*/,
-      //   loader: 'imports-loader?define=>false',
-      // },
     ],
   },
   plugins: [
