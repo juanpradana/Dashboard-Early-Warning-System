@@ -8,6 +8,12 @@ const dataTableDrawer = {
       const tableData = new DataTable('#xTable', {
         // eslint-disable-next-line quote-props
         'order': [[0, 'desc']],
+        // eslint-disable-next-line quote-props
+        'scrollY': '140px',
+        // eslint-disable-next-line quote-props
+        'scrollCollapse': true,
+        // eslint-disable-next-line quote-props
+        'paging': false,
       });
       setInterval(async () => {
         try {

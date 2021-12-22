@@ -26,7 +26,7 @@ const createDashboardContentTemplate = (_codeUnit) => {
     </div>
     <div id="location" class="grafik card">
       <h1>Lokasi PUMMA</h1>
-      <iframe src="${CONFIG.LOCATION[_codeUnit]}" loading="lazy"></iframe>
+      <iframe src="${CONFIG.UNIT_CODED[_codeUnit].location}" loading="lazy"></iframe>
     </div>
   `;
 };
@@ -36,8 +36,8 @@ const createDashboardTemplate = (_codeUnit) => {
   const dashboardContainer = document.querySelector('.dashboard');
   dashboardContainer.innerHTML = `
     <div id="picture" class="picture ">
-      <a href="${CONFIG.UNIT_CODE[_codeUnit]}" target="_blank"> 
-        <img src="${CONFIG.UNIT_CODE[_codeUnit]}" alt="pumma lampung 001" width="100%" height="100%"> 
+      <a href="${CONFIG.UNIT_CODED[_codeUnit].img}" target="_blank"> 
+        <img src="${CONFIG.UNIT_CODED[_codeUnit].img}" alt="pumma lampung 001" width="100%" height="100%"> 
       </a>
     </div>
     <div class="content_grid"></div>
@@ -51,20 +51,16 @@ const createHomepageTemplate = () => {
   const homePageContainer = document.querySelector('.homeContent');
   homePageContainer.innerHTML = `
   <main>
-  <div class="Device-list"><h2>Device List</h2></div> 
-  <div class="Device-grid-name">
-       <div class="Device-name">Lampung 01</div>
-       <div class="Device-name">Lampung 01</div>
-       <div class="Device-name">Lampung 01</div>
-       <div class="Device-name">Lampung 01</div>
-       <div class="Device-name">Lampung 01</div>
-       <div class="Device-name">Lampung 01</div>
-       <div class="Device-name">Lampung 01</div>
-       <div class="Device-name">Lampung 01</div>
-       <div class="Device-name">Lampung 01</div>
-   </div>
-</main>
-`;
+    <div class="Device-list"><h2>Device List</h2></div> 
+    <div class="Device-grid-name"></div>
+  </main>`;
+  const deviceContainer = document.querySelector('.Device-grid-name');
+  Object.keys(CONFIG.UNIT_CODED).forEach((key) => {
+    deviceContainer.innerHTML += `
+    <a href="#/dashboard/${key}">
+      <div class="Device-name">${key}</div>
+    </a>`;
+  });
 };
 const createAboutUsTemplate = () => {
   const aboutUsContainer = document.querySelector('.aboutContent');
@@ -77,7 +73,7 @@ const createAboutUsTemplate = () => {
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe maxime nulla facere explicabo obcaecati, asperiores quas blanditiis ipsum non accusantium, dolorem magnam vitae. Impedit, esse! Ut neque iusto distinctio.</p>
       </div>
       <div class="about-picture-container">
-          <img class="about-picture"  src="../public/img/icon project capstone1.png" alt="">
+          <img class="about-picture"  src="/images/icon_project_capstone1.png" alt="">
       </div> 
   </div>
   
@@ -89,7 +85,7 @@ const createAboutUsTemplate = () => {
   <div class="Device-grid-fitur">
   <div class="Device-fitur">
       <div class="container-icon">
-          <img src="/src/public/img/icon project capstone.png" alt=""> 
+          <img src="/images/icon_project_capstone.png" alt=""> 
       </div>
       <h1>Grafik Suhu Radar</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
@@ -97,14 +93,14 @@ const createAboutUsTemplate = () => {
   </div>
   <div class="Device-fitur">
       <div class="container-icon">
-          <img src="/src/public/img/icon project capstone.png" alt="">
+          <img src="/images/icon_project_capstone.png" alt="">
       </div>
       <h1>Grafik Ketinggian air laut</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
   </div>
   <div class="Device-fitur">
       <div class="container-icon">
-          <img src="/src/public/img/icon project capstone1.png" alt="">
+          <img src="/images/icon_project_capstone1.png" alt="">
       </div>
       <h1>Tabel Suhu radar dan ketinggian air</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
@@ -112,7 +108,7 @@ const createAboutUsTemplate = () => {
   </div>
   <div class="Device-fitur">
       <div class="container-icon">
-          <img src="/src/public/img/icon project capstone2.png" alt="">
+          <img src="/images/icon_project_capstone2.png" alt="">
       </div>
       <h1>Foto Sekitar Radar</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
