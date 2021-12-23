@@ -1,12 +1,12 @@
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 500px) {
   .app-bar__navMenu {
     z-index: 10;
     background-color: #fff;
     width: 300px;
     position: absolute;
 
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
+    -webkit-transform: translate(-400px, 0);
+    transform: translate(-400px, 0);
 
     transition: transform 0.3s ease;
   }
