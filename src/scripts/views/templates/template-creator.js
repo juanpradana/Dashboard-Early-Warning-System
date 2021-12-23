@@ -58,7 +58,12 @@ const createHomepageTemplate = () => {
   Object.keys(CONFIG.UNIT_CODED).forEach((key) => {
     deviceContainer.innerHTML += `
     <a href="#/dashboard/${key}">
-      <div class="Device-name">${key}</div>
+      <div class="Device-name">
+        <div class="Device-icon-text">
+        <img src="/images/icon-device.png" alt="gambar ${key}">
+        <h2>${key}</h2>
+        </div>
+      </div>
     </a>`;
   });
 };

@@ -1,7 +1,68 @@
-@media screen and (max-width: 364px) {
-  .app-bar .app-bar__location {
-    top: 118.4px;
+@media screen and (max-width: 499px) {
+  .app-bar__navMenu {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+
+    transition: transform 0.3s ease;
   }
+
+  .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+  }
+
+  .app-bar__navMenu li {
+      display: list-item;
+      border-bottom: 1px solid #E0E0E0;
+      width: 100%;
+      text-align: left;
+
+  }
+  .app-bar__navMenu a {
+      color:black;
+
+  }
+  .app-bar__navMenu a:hover {
+      color: black;
+  }
+  .app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .app-bar .app-bar__menu button {
+    background-color: #266079;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  main .Device-name{
+    width: 95%;
+    height: 230px;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  main .Device-name .Device-icon-text{
+    width: 70%;
+    height: 180px;
+    margin:0px auto;
+    padding-top: 10px;
+   }
+}
+@media screen and (min-width: 500px) {
+  .hamburgerMenu{
+    display: none;
+  }
+
+  
 }
 @media screen and (min-width: 800px) {
   .content_grid{
@@ -15,6 +76,19 @@
   .picture{
     height: 400px;
   }
+  main .Device-name{
+    width: 95%;
+    height: 270px;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  main .Device-name .Device-icon-text{
+    width: 70%;
+    height: 200px;
+    margin:0px auto;
+    padding-top: 10px;
+   }
   
 }
 @media screen and (max-width: 900px) {
@@ -35,6 +109,7 @@
   main .Device-grid-name{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
   }
   .Device-grid-fitur{
     display: grid;
@@ -63,6 +138,7 @@
   main .Device-grid-name{
     display: grid;
     grid-template-columns: 1fr;
+
     }
   .Device-grid-fitur{
     display: grid;
@@ -75,6 +151,7 @@
   main .Device-grid-name{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
   }
   .Device-grid-fitur{
       display: grid;
@@ -84,6 +161,6 @@
   .about-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap:20px;
 }
 }
