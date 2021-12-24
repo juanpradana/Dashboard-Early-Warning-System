@@ -38,7 +38,7 @@ const createDashboardTemplate = (_codeUnit) => {
   dashboardContainer.innerHTML = `
     <div id="picture" class="picture ">
       <a href="${CONFIG.UNIT_CODED[_codeUnit].img}" target="_blank"> 
-        <img src="${CONFIG.UNIT_CODED[_codeUnit].img}" alt="pumma lampung 001" width="100%" height="100%"> 
+        <img src="${CONFIG.UNIT_CODED[_codeUnit].img}" alt="pumma ${_codeUnit}" width="100%" height="100%"> 
       </a>
     </div>
     <div class="content_grid"></div>
