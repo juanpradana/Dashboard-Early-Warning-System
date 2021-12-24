@@ -100,8 +100,8 @@ const createAboutUsTemplate = () => {
       <div class="container-icon">
           <img src="/images/icon_project_capstone.png" alt=""> 
       </div>
-      <h1>Grafik Suhu Radar</h1>
-      <p>Grafik suhu radar akan memberikan data realtime tentang berapa suhu pada radar, data ini akan terus di update setiap satu detik. Data ini sangat penting untuk memantau radar dan sebagai indikator radar masih dalam keadaan baik atau perlu pemeliharaan.</p>
+      <h1>Grafik Suhu Perangkat</h1>
+      <p>Grafik suhu perangkat akan memberikan data realtime tentang berapa suhu pada perangkat, data ini akan terus di update setiap satu detik. Data ini sangat penting untuk memantau perangkat dan sebagai indikator perangkat masih dalam keadaan baik atau perlu pemeliharaan.</p>
       
   </div>
   <div class="Device-fitur">
@@ -115,16 +115,16 @@ const createAboutUsTemplate = () => {
       <div class="container-icon">
           <img src="/images/icon_project_capstone1.png" alt="">
       </div>
-      <h1>Tabel Suhu radar dan ketinggian air</h1>
-      <p>Table suhu radar dan ketinggian air adalah alternatif dari grafik ketinggian air dan suhu radar,pada table ini menampikan data realtime dari ketinggian air laut dan suhu radar, table ini berguna untuk melihat data secara rapih dan terstruktur.</p>
+      <h1>Tabel Suhu perangkat dan ketinggian air</h1>
+      <p>Table suhu perangkat dan ketinggian air adalah alternatif dari grafik ketinggian air dan suhu perangkat,pada table ini menampikan data realtime dari ketinggian air laut dan suhu perangkat, table ini berguna untuk melihat data secara rapih dan terstruktur.</p>
 
   </div>
   <div class="Device-fitur">
       <div class="container-icon">
           <img src="/images/icon_project_capstone3.png" alt="">
       </div>
-      <h1>Foto Sekitar Radar</h1>
-      <p>Location adalah informasi lokasi dari radar berada, ketika diakses maka akan memberikan peta lokasi dimana radar berada.</p>
+      <h1>Foto Sekitar Perangkat</h1>
+      <p>Location adalah informasi lokasi dari perangkat berada, ketika diakses maka akan memberikan peta lokasi dimana perangkat berada.</p>
   </div>
   </div>`;
 };
