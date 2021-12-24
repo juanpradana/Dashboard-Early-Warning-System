@@ -33,6 +33,8 @@
   .app-bar .app-bar__menu {
     display: flex;
     align-items: center;
+    position: fixed;
+    top:100px;
   }
 
   .app-bar .app-bar__menu button {

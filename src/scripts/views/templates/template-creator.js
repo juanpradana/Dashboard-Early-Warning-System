@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import Temperature from '../../components/temperatureGraph';
 import SurfaceMeasure from '../../components/surfaceMeasureGraph';
 import dataTableDrawer from '../../components/dataTable';
@@ -74,8 +75,15 @@ const createAboutUsTemplate = () => {
   <h1>About us</h1>
   <div class="about-grid">
       <div class="about-description">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea id, quod sit, est vel, nobis atque ducimus dolore reprehenderit temporibus enim. Et, harum obcaecati nobis consequatur culpa suscipit ducimus blanditiis?
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe maxime nulla facere explicabo obcaecati, asperiores quas blanditiis ipsum non accusantium, dolorem magnam vitae. Impedit, esse! Ut neque iusto distinctio.</p>
+          <p>PUMMA merupakan suatu sistem peringatan dini tsunami yang terdiri dari beberapa subsistem yaitu sensor, sistem mikrokomputer, transmisi data, catu daya, dan subsistem pengolahan data/informasi (*datacenter*).
+
+          Konstruksi PUMMA terbuat dari *stainless-steel* atau bahan galvanis antikarat, karena akan ditempatkan di tengah laut dan pantai. Struktur utama PUMMA berupa tiang yang dipasang *box* berisi sensor *tide-gauge* ultrasonik berbasis mikrokomputer yang berfungsi untuk mengukur ketinggian muka air laut.</p>
+          
+          <p>Mikrokomputer berfungsi untuk mengatur interval waktu akuisisi data di sensor (setiap 1 detik), kemudian mengkonversi data ketinggian muka air laut dan *captured image* dari kamera lalu mengirimkan data tersebut ke subsistem penyimpanan dan pengolahan data yang berada di *cloud-server* menggunakan radio transmisi gelombang mikro.</p>
+          
+          <p>Selanjutnya data hasil pengolahan di *platform* datacenter akan menampilkan informasi ketinggian gelombang laut dalam bentuk tabel dan grafik sehingga kondisi ketinggian muka air laut dapat dipantau setiap saat.
+          
+          PUMMA juga dilengkapi dengan kamera CCTV yang dapat menangkap tinggi muka air laut dan mengirim gambar setiap dua menit sekali ke server. Selain dapat diakses langsung melalui *website*, data dan informasi dari U-TEWS akan ditampilkan pada papan informasi elektronik (*electronic information board*) yang ditempatkan di masjid/musala di desa/dusun sepanjang pesisir Lampung.</p>
       </div>
       <div class="about-picture-container">
           <img class="about-picture"  src="/images/icon_project_capstone1.png" alt="">
@@ -93,7 +101,7 @@ const createAboutUsTemplate = () => {
           <img src="/images/icon_project_capstone.png" alt=""> 
       </div>
       <h1>Grafik Suhu Radar</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
+      <p>Grafik suhu radar akan memberikan data realtime tentang berapa suhu pada radar, data ini akan terus di update setiap satu detik. Data ini sangat penting untuk memantau radar dan sebagai indikator radar masih dalam keadaan baik atau perlu pemeliharaan.</p>
       
   </div>
   <div class="Device-fitur">
@@ -101,14 +109,14 @@ const createAboutUsTemplate = () => {
           <img src="/images/icon_project_capstone.png" alt="">
       </div>
       <h1>Grafik Ketinggian air laut</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
+      <p>grafik ketinggian air laut memberikan data realtime tentang berapa ketinggian air laut, data ini akan terus diupdate setiap satu detik. informasi dari grafik ini merupakan fokus utama, karena jika permukaan air laut mengalami kenaikan atau penurunan yang sangat derastis itu menjadi pertanda yang harus diwaspadai.</p>
   </div>
   <div class="Device-fitur">
       <div class="container-icon">
           <img src="/images/icon_project_capstone1.png" alt="">
       </div>
       <h1>Tabel Suhu radar dan ketinggian air</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
+      <p>Table suhu radar dan ketinggian air adalah alternatif dari grafik ketinggian air dan suhu radar,pada table ini menampikan data realtime dari ketinggian air laut dan suhu radar, table ini berguna untuk melihat data secara rapih dan terstruktur.</p>
 
   </div>
   <div class="Device-fitur">
@@ -116,7 +124,7 @@ const createAboutUsTemplate = () => {
           <img src="/images/icon_project_capstone2.png" alt="">
       </div>
       <h1>Foto Sekitar Radar</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora doloribus aspernatur minus, ut repudiandae nam maiores eum provident ea alias magnam? Magnam libero illum fugiat! Molestias repellat minima ipsum.</p>
+      <p>Location adalah informasi lokasi dari radar berada, ketika diakses maka akan memberikan peta lokasi dimana radar berada.</p>
   </div>
   </div>`;
 };

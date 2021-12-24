@@ -7,6 +7,9 @@ class navigasiBar extends HTMLElement {
     this.innerHTML = `
       <div class="head-bar">
         <div class="app-bar">
+          <div class="app-bar__brand">
+            <h1>PU<span class="app-bar__brand_color">MMA</span></h1>
+          </div>
           <div class="app-bar__menu">
             <button aria-label="menu button" id="hamburgerButton" class="hamburgerMenu" type="button">
               <span class="fas fa-angle-double-right"></span>
