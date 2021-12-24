@@ -86,7 +86,7 @@ const createAboutUsTemplate = () => {
           PUMMA juga dilengkapi dengan kamera CCTV yang dapat menangkap tinggi muka air laut dan mengirim gambar setiap dua menit sekali ke server. Selain dapat diakses langsung melalui *website*, data dan informasi dari U-TEWS akan ditampilkan pada papan informasi elektronik (*electronic information board*) yang ditempatkan di masjid/musala di desa/dusun sepanjang pesisir Lampung.</p>
       </div>
       <div class="about-picture-container">
-          <img class="about-picture"  src="/images/icon_project_capstone1.png" alt="">
+          <img class="about-picture"  src="/images/icon-aboutus.png" alt="">
       </div> 
   </div>
   
