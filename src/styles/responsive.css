@@ -33,7 +33,7 @@
   .app-bar .app-bar__menu {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top:100px;
   }
 
