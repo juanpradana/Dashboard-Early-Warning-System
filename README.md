@@ -27,3 +27,6 @@ It is a dashboard that displays photos at the location of PUMMA devices every 2 
 ## Problem
 - if using http, service worker not support
 - if using https, can't fetch cause mix content from http Rest API
+
+## Deployed
+http://13.212.183.131
