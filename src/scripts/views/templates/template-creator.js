@@ -121,7 +121,7 @@ const createAboutUsTemplate = () => {
   </div>
   <div class="Device-fitur">
       <div class="container-icon">
-          <img src="/images/icon_project_capstone2.png" alt="">
+          <img src="/images/icon_project_capstone3.png" alt="">
       </div>
       <h1>Foto Sekitar Radar</h1>
       <p>Location adalah informasi lokasi dari radar berada, ketika diakses maka akan memberikan peta lokasi dimana radar berada.</p>
