@@ -15,7 +15,7 @@ It is a dashboard that displays photos at the location of PUMMA devices every 2 
 ## Installation
 - ```git clone https://github.com/juanpradana/Dashboard-Early-Warning-System.git```
 - ```npm install```
-- To develop, use ```npm run start-dev```
+- To develop, use ```npm run start-dev```, for node.js v.17 or newer, set ```$env:NODE_OPTIONS = "--openssl-legacy-provider"``` at windows powershell
 - to produce, use ```npm run build```, production results can be seen in the ```dist``` directory
 
 ## Project Resource
